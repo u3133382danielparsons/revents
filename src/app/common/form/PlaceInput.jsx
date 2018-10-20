@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import { Form, Label } from "semantic-ui-react";
-import Script from "react-load-script";
-import PlacesAutocomplete from "react-places-autocomplete";
+import React, { Component } from 'react';
+import { Form, Label } from 'semantic-ui-react';
+import Script from 'react-load-script';
+import PlacesAutocomplete from 'react-places-autocomplete';
 
 const styles = {
-    autocompleteContainer: {
-        zIndex: 1000
-    }
-}
+  autocompleteContainer: {
+    zIndex: 1000
+  }
+};
 
 class PlaceInput extends Component {
   state = {
@@ -15,6 +15,7 @@ class PlaceInput extends Component {
   };
 
   handleScriptLoaded = () => this.setState({ scriptLoaded: true });
+
   render() {
     const {
       input,
@@ -30,14 +31,20 @@ class PlaceInput extends Component {
           url="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN7fgRAiHziOULjK8JIsMQipI9j-_5rE0&libraries=places"
           onLoad={this.handleScriptLoaded}
         />
-        {this.state.scriptLoaded && 
-        <PlacesAutocomplete 
-            inputProps={{...input, placeholder}}
+        {this.state.scriptLoaded && (
+          <PlacesAutocomplete
+            inputProps={{ ...input, placeholder }}
             options={options}
             onSelect={onSelect}
             styles={styles}
-        />}
-        {touched && error && <Label basic color='red'>{error}</Label>}
+          />
+        )}
+        {touched &&
+          error && (
+            <Label basic color="red">
+              {error}
+            </Label>
+          )}
       </Form.Field>
     );
   }

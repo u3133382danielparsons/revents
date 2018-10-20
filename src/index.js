@@ -35,5 +35,3 @@ if (module.hot) {
 render();
 
 registerServiceWorker();
-
- 

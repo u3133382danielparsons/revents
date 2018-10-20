@@ -30,7 +30,7 @@ body {
 }
 
 .masthead.segment {
-  min-height: 700px;
+  min-height: 100vh;
   padding: 1em 0 !important;
 }
 
@@ -68,6 +68,14 @@ body {
 
 /* navbar styles */
 
+.ui.menu {
+  font-size: 1.61rem;
+}
+
+.ui.menu .item {
+  line-height: 2.1;
+}
+
 .ui.menu .item img.logo {
   margin-right: 1.5em;
 }
@@ -97,6 +105,7 @@ body {
 
 .ui.menu .item>img:not(.ui) {
   margin-right: 1.5em !important;
+  width: 8rem;
 }
 
 .ui.menu:not(.vertical) .item>.button {
