@@ -91,7 +91,7 @@ body {
 
 .ui.main.container,
 .main.segment {
-  margin-top: 7em;
+  margin-top: 8em;
 }
 
 .ui.center.aligned.segment.attendance-preview {
@@ -117,4 +117,9 @@ body {
 .ui.comments .comment .comments {
   padding-bottom: 0 !important;
   padding-left: 2em !important;
+}
+
+/* Bring datepicker to front - Fix Chrome autosuggest blocking */
+.react-datepicker {
+  z-index: 1;
 }

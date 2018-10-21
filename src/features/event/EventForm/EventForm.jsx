@@ -178,6 +178,7 @@ class EventForm extends Component {
                 timeFormat="HH:mm"
                 showTimeSelect
                 placeholder="Date and time of event"
+                autoComplete="off"
               />
               <Button
                 disabled={invalid || submitting || pristine}
