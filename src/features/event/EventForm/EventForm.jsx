@@ -39,13 +39,15 @@ const actions = {
 };
 
 const category = [
-  { key: 'drinks', text: 'Drinks', value: 'drinks' },
+  { key: 'business', text: 'Business', value: 'business' },
+  { key: 'sport', text: 'Sport', value: 'sport' },
+  { key: 'lifestyle', text: 'Lifestyle', value: 'lifestyle' },
   { key: 'culture', text: 'Culture', value: 'culture' },
   { key: 'film', text: 'Film', value: 'film' },
   { key: 'food', text: 'Food', value: 'food' },
   { key: 'music', text: 'Music', value: 'music' },
-  { key: 'sport', text: 'Sport', value: 'sport' },
-  { key: 'travel', text: 'Travel', value: 'travel' }
+  { key: 'travel', text: 'Travel', value: 'travel' },
+  { key: 'drinks', text: 'Drinks', value: 'drinks' }
 ];
 
 const validate = combineValidators({
